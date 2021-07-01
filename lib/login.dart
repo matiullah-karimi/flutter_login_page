@@ -171,6 +171,7 @@ class _LoginScreenState extends State<LoginScreen> {
             height: 24,
           ),
           Button(
+            label: 'Sign in',
             onTap: () {
               if (_formKey.currentState!.validate()) {}
             },

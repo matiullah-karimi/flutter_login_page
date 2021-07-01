@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:login_screen/login.dart';
+import 'package:login_screen/home.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: LoginScreen(),
+      home: SafeArea(child: HomeScreen()),
     );
   }
 }
