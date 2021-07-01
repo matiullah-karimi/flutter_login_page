@@ -30,7 +30,7 @@ class _LoginScreenState extends State<LoginScreen> {
               children: [
                 SizedBox(height: 40),
                 Text(
-                  'Hello again!',
+                  'Hello Again!',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 28,
@@ -149,6 +149,7 @@ class _LoginScreenState extends State<LoginScreen> {
             hint: 'Password',
             controller: passwordController,
             obscure: true,
+            suffixIcon: FontAwesomeIcons.eyeSlash,
           ),
           GestureDetector(
             onTap: () {
@@ -181,7 +182,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   Container _buildSocialBox(IconData icon, Color color) {
     return Container(
-      width: 100,
+      width: 85,
       padding: EdgeInsets.all(16),
       decoration: BoxDecoration(
         border: Border.all(color: Colors.white, width: 2),
